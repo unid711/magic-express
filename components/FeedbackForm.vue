@@ -16,7 +16,13 @@
       <label for="white-count">White</label>
       <input id="white-count" type="number" name="white-count" />
       <label for="blue-count">Blue</label>
-      <input id="blue-count" type="number" name="blue-count" defaulValue="0" />
+      <input id="blue-count" type="number" name="blue-count" defaulValue="0" />      
+      <label for="black-count">Black</label>
+      <input id="black-count" type="number" name="black-count" />      
+      <label for="green-count">Green</label>
+      <input id="green-count" type="number" name="green-count" />      
+      <label for="red-count">Red</label>
+      <input id="red-count" type="number" name="red-count" />
       <button type="submit">Submit</button>
     </form>
   </div>
