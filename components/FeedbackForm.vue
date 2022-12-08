@@ -13,12 +13,10 @@
         </label>
       </p>
       <input type="hidden" name="form-name" value="feedback" />
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" />
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required />
-      <label for="feedback">What is your feedback?</label>
-      <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+      <label for="white-count">White</label>
+      <input id="white-count" type="number" name="white-count" />
+      <label for="blue-count">Blue</label>
+      <input id="blue-count" type="number" name="blue-count" defaulValue="0" />
       <button type="submit">Submit</button>
     </form>
   </div>
