@@ -4,7 +4,7 @@ export default {
     joke: '',
   }),
   async mounted() {
-    this.joke = await fetch('/api/joke').then((res) => res.json())
+   // this.joke = await fetch('/api/joke').then((res) => res.json())
   },
 }
 </script>
