@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-toolbox',
+    title: 'Magic Express',
     htmlAttrs: {
       lang: 'en',
     },
