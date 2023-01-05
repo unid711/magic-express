@@ -2,12 +2,12 @@
   export default{
     data () {
       return {
-        whiteCount: 0,
-        blueCount: 0,
-        blackCount: 0,
-        greenCount: 0,
-        redCount: 0,
-        otherCount: 0,  
+        whiteCount: "",
+        blueCount: "",
+        blackCount: "",
+        greenCount: "",
+        redCount: "",
+        otherCount: "",  
         resultString: "",
         totalString: ""
       }
@@ -19,19 +19,19 @@
         const totalCount = Math.round(nonLandTotalCount / ratio);
         const totalLandCount = totalCount - nonLandTotalCount;
 
-        const whitePercent = this.whiteCount / nonLandTotalCount;
+        const whitePercent = this.whiteCount / (nonLandTotalCount - this.otherCount);
         const plainsCount = Math.round(totalLandCount * whitePercent); 
 
-        const bluePercent = this.blueCount / nonLandTotalCount;
+        const bluePercent = this.blueCount / (nonLandTotalCount - this.otherCount);
         const islandsCount = Math.round(totalLandCount * bluePercent);
 
-        const blackPercent = this.blackCount / nonLandTotalCount;
+        const blackPercent = this.blackCount / (nonLandTotalCount - this.otherCount);
         const swampsCount = Math.round(totalLandCount * blackPercent);
 
-        const greenPercent = this.greenCount / nonLandTotalCount;
+        const greenPercent = this.greenCount / (nonLandTotalCount - this.otherCount);
         const forestsCount = Math.round(totalLandCount * greenPercent);
 
-        const redPercent = this.redCount / nonLandTotalCount;
+        const redPercent = this.redCount / (nonLandTotalCount - this.otherCount);
         const mountainsCount = Math.round(totalLandCount * redPercent);
         
         const resultStrings = [];
