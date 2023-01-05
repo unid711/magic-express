@@ -122,7 +122,7 @@ textarea {
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 button {
@@ -133,7 +133,7 @@ button {
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .hidden {
